@@ -89,7 +89,7 @@ class PandasGUI(QtWidgets.QMainWindow):
         self.setWindowTitle('PandasGUI')
         pdgui_icon = 'images/icon.png'
         pdgui_icon_path = pkg_resources.resource_filename(__name__, pdgui_icon)
-        self.app.setWindowIcon(QtGui.QIcon(pdgui_icon_path))
+        self.setWindowIcon(QtGui.QIcon(pdgui_icon_path))
 
         self.show()
 
